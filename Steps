@@ -1,0 +1,14 @@
+Installation locale de jenkins : OK
+Création d'un pipeline par défaut : OK
+1er Build : En echec :
+	Seen 0 remote branches
+	 > git.exe show-ref --tags -d # timeout=10
+	ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+	Finished: FAILURE
+=> nécessité de tagger la version
+=> pas de tag possible depuis VS pour le moment, obligé de le faire à la main
+==>HOWTO TAG
+	-Ouvrir Git Bash
+	-Aller dans le répertoire Sources/Repos/Backend_Webapi
+	-git tag -a v0.1 -m "Initial Tag"
+	-git tag pour lister les tags
